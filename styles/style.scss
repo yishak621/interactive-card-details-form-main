@@ -236,7 +236,7 @@ label {
     min-height: 100vh;
   }
   .form-wrapper {
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 40%;
   }
   .form {
@@ -245,7 +245,7 @@ label {
   //ATM cards
   .atm-card-wrapper {
     @include flexCenter(column-reverse, auto, auto);
-    transform: translate(50%, 0%);
+    transform: translate(50%, -10%);
     img {
       width: 100%;
       height: 100%;
@@ -281,11 +281,12 @@ label {
     bottom: 40px;
     z-index: 1;
   }
-  .front-name-wrapper,
-  .btn-confirm {
+  .front-name-wrapper {
     margin-top: 0;
   }
-
+  .btn-confirm {
+    margin-top: 4rem;
+  }
   .atm-card__back {
     top: 45%;
     left: 21rem;
