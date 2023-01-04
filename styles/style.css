@@ -279,10 +279,10 @@ label {
     grid-template-columns: 0.5fr 1fr;
   }
   .violet-background {
-    min-height: 120vh;
+    min-height: 100vh;
   }
   .form-wrapper {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 40%;
   }
   .form {
@@ -293,7 +293,7 @@ label {
     justify-content: auto;
     align-items: auto;
     flex-direction: column-reverse;
-    transform: translate(50%, -5%);
+    transform: translate(50%, 0%);
   }
   .atm-card-wrapper img {
     width: 100%;
