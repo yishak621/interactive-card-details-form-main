@@ -27,7 +27,7 @@ input[type=number] {
   justify-content: center;
   align-items: flex-end;
   flex-direction: row;
-  height: 51vh;
+  height: 35vh;
   background-color: hsl(278deg, 68%, 11%);
 }
 
@@ -36,7 +36,7 @@ input[type=number] {
   justify-content: auto;
   align-items: auto;
   flex-direction: column;
-  transform: translate(10%, 30%);
+  transform: translate(15%, 30%);
 }
 .atm-card-wrapper img {
   width: 68%;
