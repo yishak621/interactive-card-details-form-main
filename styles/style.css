@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+/*variables*/
+body {
+  font-family: "Space Grotesk", sans-serif;
+  max-width: 1440px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.violet-background {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  height: 51vh;
+  background-color: hsl(278deg, 68%, 11%);
+}
+
+.atm-card-wrapper {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  flex-direction: column;
+  transform: translate(10%, 30%);
+}
+.atm-card-wrapper img {
+  width: 68%;
+  height: 68%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.atm-card-wrapper__front {
+  position: relative;
+  bottom: 67px;
+  right: 60px;
+  z-index: 1;
+}
+
+.atm-card__front {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  flex-direction: column;
+  position: absolute;
+  bottom: 8px;
+  left: 11.2px;
+  gap: 2rem;
+  padding: 1rem;
+  width: 16rem;
+  color: hsl(0deg, 0%, 100%);
+  z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .atm-card__front {
+    left: 0;
+    gap: 1rem;
+    transform: scale(0.8);
+  }
+}
+.front-circles {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1.8rem;
+  gap: 14px;
+}
+
+.white-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.small-circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.front-numbers {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.front-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.atm-card-wrapper__back {
+  position: relative;
+}
+
+.atm-card__back {
+  position: absolute;
+  top: 43%;
+  left: 230px;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 4rem auto;
+  max-width: 500px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input {
+  font-size: 1.15rem;
+  position: relative;
+  padding: 0.7rem;
+  padding-left: 1rem;
+  max-width: 80vw;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  border-radius: 5px;
+  outline: transparent;
+  transition: all 0.5s;
+}
+input::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+input:-ms-input-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+input:hover {
+  cursor: pointer;
+  outline: 1.5px solid hsl(278deg, 94%, 30%);
+}
+input:focus {
+  outline: none;
+  border: 1.5px solid;
+  -o-border-image: linear-gradient(to right, hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%));
+     border-image: linear-gradient(to right, hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%));
+  border-image-slice: 1;
+}
+
+label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.input-number,
+.input-name {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+
+.date-input__wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 1.1rem;
+}
+
+.date-input__wrapper {
+  max-width: 400px;
+}
+
+.date-input__wrapper > * {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: row;
+  max-width: 200px;
+}
+
+.input-date,
+.input-cvc {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  flex-direction: column;
+}
+.input-date input,
+.input-cvc input {
+  margin-top: 10px;
+}
+
+.input-date {
+  gap: 0;
+}
+
+#date {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 10px;
+}
+#date input {
+  max-width: 50px;
+}
+#date input::-moz-placeholder {
+  text-transform: uppercase;
+}
+#date input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+#date input::placeholder {
+  text-transform: uppercase;
+}
+
+.input-cvc input {
+  max-width: 37.037037037vw;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  padding: 1rem 2rem;
+  max-height: 50px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-confirm {
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 1.8rem;
+}
+
+.btn-confirm:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(278deg, 68%, 11%);
+  outline: 1px solid hsl(278deg, 68%, 11%);
+}
+
+.btn-confirm:active {
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 1041px) {
+  .card-wrapper {
+    grid-template-columns: 0.5fr 1fr;
+  }
+  .violet-background {
+    min-height: 120vh;
+  }
+  .form-wrapper {
+    margin-top: 20%;
+    margin-left: 40%;
+  }
+  .form {
+    gap: 1.5rem;
+  }
+  .atm-card-wrapper {
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    flex-direction: column-reverse;
+    transform: translate(50%, -5%);
+  }
+  .atm-card-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .atm-card__front {
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 5vmin;
+    padding: 0.8rem 1.3rem;
+    aspect-ratio: 2/1;
+    width: 18rem;
+    color: hsl(0deg, 0%, 100%);
+    transform: scale(1.2);
+  }
+  .white-circle,
+.small-circle {
+    transform: scale(1.2);
+  }
+  .detailed-info {
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    flex-direction: column;
+    gap: 19px;
+  }
+  .atm-card-wrapper__front {
+    bottom: 40px;
+    z-index: 1;
+  }
+  .front-name-wrapper,
+.btn-confirm {
+    margin-top: 0;
+  }
+  .atm-card__back {
+    top: 45%;
+    left: 21rem;
+  }
+}
+@media screen and (max-width: 423px) {
+  .atm-card__back {
+    left: 200px;
+  }
+}
+.error {
+  border: 1px solid hsl(0deg, 100%, 66%);
+}
+
+.show-thankyou {
+  display: flex !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+.card-error,
+.date-error,
+.cvc-error,
+.name-error {
+  position: absolute;
+  top: 70px;
+  font-size: 0.7rem;
+  color: hsl(0deg, 100%, 66%);
+  text-transform: capitalize;
+  display: none;
+}
+
+.input-name,
+.input-number,
+.input-date,
+.input-cvc {
+  position: relative;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: none;
+}
+
+.thank-you__text {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-top: 2rem;
+}
+
+.thank-you__para {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: hsl(279deg, 6%, 55%);
+}
+
+@media screen and (min-width: 1024px) {
+  .thank-you {
+    margin-top: 3rem;
+    height: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

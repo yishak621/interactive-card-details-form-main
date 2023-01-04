@@ -1,0 +1,20 @@
+//## Colors
+//### Primary
+
+$Linear_gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); //(active input border)
+$Red: hsl(0, 100%, 66%); //(input errors)
+
+//### Neutral
+
+$White: hsl(0, 0%, 100%);
+$Light_grayish_violet: hsl(270, 3%, 87%);
+$Dark_grayish_violet: hsl(279, 6%, 55%);
+$Very_dark_violet: hsl(278, 68%, 11%);
+/*variables*/
+$transition: all 0.3s linear;
+$spacing: 0.25rem;
+$radius: 0.5rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+$max-width: 1370px;
+$fixed-width: 620px;

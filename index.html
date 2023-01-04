@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--styles-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <title>CBE|card.et</title>
+  </head>
+  <body>
+    <main>
+      <!--main section-->
+      <section class="card-wrapper">
+        <div class="violet-background">
+          <div class="atm-card-wrapper">
+            <!--back card-->
+            <div class="atm-card-wrapper__back">
+              <img src="./images/bg-card-back.png" alt="card-back" />
+              <div class="atm-card__back">000</div>
+            </div>
+
+            <!--front-card-->
+            <div class="atm-card-wrapper__front">
+              <img src="./images/bg-card-front.png" alt="card-front" />
+              <div class="atm-card__front">
+                <div class="front-circles">
+                  <div class="white-circle"></div>
+                  <div class="small-circle"></div>
+                </div>
+                <div class="detailed-info">
+                  <div class="front-numbers">
+                    0000 &nbsp;0000 &nbsp;0000 &nbsp;0000
+                  </div>
+                  <div class="front-name-wrapper">
+                    <span class="front-name__user">jane appleseed</span>
+                    <span
+                      ><span class="month">00</span> /
+                      <span class="year">00</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--form-->
+        <div class="form-wrapper">
+          <form action="POST" class="form">
+            <!--input name-->
+            <div class="input-name">
+              <label for="name">cardholder name</label>
+              <input
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+                id="name"
+                required="required"
+              />
+              <span class="name-error">Can't be blank</span>
+            </div>
+            <!--input card number-->
+            <div class="input-number">
+              <label for="input-number">card number</label>
+              <input
+                id="input-number"
+                type="text"
+                placeholder="e.g. 1234 5678 9123 0000"
+                required="required"
+                maxlength="20"
+              />
+              <span class="card-error">Wrong format,numbers only</span>
+            </div>
+            <!--date-->
+            <div class="date-input__wrapper">
+              <div class="input-date">
+                <label for="date">exp.date (mm/yy)</label>
+                <div id="date">
+                  <input
+                    id="input-month"
+                    type="number"
+                    placeholder="mm"
+                    required="required"
+                  />
+                  <input
+                    id="input-year"
+                    type="number"
+                    placeholder="yy"
+                    required="required"
+                  />
+                </div>
+                <span class="date-error">Can't be blank</span>
+              </div>
+              <div class="input-cvc">
+                <label for="cvc">cvc</label>
+                <input
+                  id="input-cvc"
+                  type="tel"
+                  placeholder="e.g 123"
+                  required="required"
+                  maxlength="3"
+                />
+                <span class="cvc-error">Can't be blank</span>
+              </div>
+            </div>
+          </form>
+          <!--thank you card-->
+          <div class="thank-you">
+            <picture>
+              <img src="./images/icon-complete.svg" alt="icon-complete" />
+            </picture>
+            <span class="thank-you__text">thank you</span>
+            <span class="thank-you__para">We've added your card details</span>
+          </div>
+          <button class="btn btn-confirm">confirm</button>
+        </div>
+      </section>
+    </main>
+    <!--Javascript-->
+    <script src="./script.js"></script>
+    <!--moment js librery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="/path/to/moment.min.js"></script>
+  </body>
+</html>
