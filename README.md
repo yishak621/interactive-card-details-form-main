@@ -176,7 +176,7 @@ moment.js
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yishak621](https://www.frontendmentor.io/profile/yishak621)
-- Linkdin - [@yourusername](https://www.linkedin.com/in/yishak-abrham-2a865611b)
+- Linkdin - [@yishak](https://www.linkedin.com/in/yishak-abrham-2a865611b)
 
 ## Acknowledgments
 
